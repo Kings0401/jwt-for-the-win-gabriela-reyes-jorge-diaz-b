@@ -1,6 +1,10 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ajKCO3Oe)
 # Desarrollo de Aplicaciones Web
+<<<<<<< HEAD
 ## Jorge Esteban Diaz Bernal (300808) - Gabriela Reyes Gonzalez (296306)
+=======
+## Gabriela Reyes Gonzalez (0000296306) Jorge Esteban Diaz Bernal (0000300808)
+>>>>>>> 5ec9e39437fe64c3a1c7aed748338a38d82745a3
 ### Universidad de La Sabana
 #### 2024 - I
 
