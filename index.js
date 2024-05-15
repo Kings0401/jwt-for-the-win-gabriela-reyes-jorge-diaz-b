@@ -2,7 +2,7 @@ const express = require('express');
 const jwt = require('jsonwebtoken');
 const app = express();
 
-//Variable de entorno
+// Variable de entorno
 const PORT = process.env.PORT || 3030;
 const SECRET_KEY = process.env.SECRET_KEY || 'Minions';
 
@@ -27,7 +27,7 @@ const verifyToken = (req, res, next) => {
 };
 
 // Endpoint para el login donde crea y envia el token 
-app.post('/login' && '/', (req, res) => {
+app.post('/login', (req, res) => {
   const { email, password } = req.body;
 
   if (email === 'admin@admin.com' && password === 'admin') {
