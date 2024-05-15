@@ -1,9 +1,9 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const app = express();
-const PORT = 4040;
 
-const SECRET_KEY = 'Minions';
+//Variable de entorno
+const SECRET_KEY = process.env.SECRET_KEY || 'Minions';
 
 app.use(express.json());
 
@@ -85,7 +85,3 @@ app.get('/contacts', verifyToken, (req, res) => {
   res.status(200).json(usuariosAleatorios);
 });
 
-// Ruta para indicar el puerto a utilizar
-app.listen(PORT, () => {
-  console.log(`Esta vivito en http://localhost:${PORT}`);
-});

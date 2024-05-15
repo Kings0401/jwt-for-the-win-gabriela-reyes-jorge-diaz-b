@@ -4,8 +4,7 @@
   "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ajKCO3Oe)\r # Desarrollo de Aplicaciones Web\r ## Jorge Esteban Diaz Bernal (300808) - Gabriela Reyes Gonzalez (296306)\r ### Universidad de La Sabana\r #### 2024 - I",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -18,3 +17,4 @@
     "nodemon": "^3.1.0"
   }
 }
+
