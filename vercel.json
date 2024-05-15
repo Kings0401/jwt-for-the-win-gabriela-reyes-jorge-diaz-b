@@ -1,19 +1,19 @@
-{ 
-    "version": 2, 
-    "builds": [ 
-      { 
-        "src": "index.js",
-        "use": "@now/node"
-      } 
-    ], 
-    
-    "routes": [ 
-      { 
-        "handle": "filesystem" 
-      }, 
-      { 
-        "src": "/(.*)", 
-        "dest": "/index.js"
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "./index.js",
+        "use": "@vercel/node",
+        "config": {}
       }
-    ]
-}
+    ],
+    "routes": [
+      {
+        "src": "/api/*",
+        "dest": "index.js"
+      }
+    ],
+    "env": {
+      "SECRET_KEY": "${SECRET_KEY}" // Set the environment variable for the secret key
+    }
+  }
