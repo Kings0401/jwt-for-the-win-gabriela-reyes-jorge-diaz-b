@@ -8,17 +8,18 @@ const SECRET_KEY = process.env.SECRET_KEY || 'Minions';
 
 app.use(express.json());
 
-// Middleware para verificar el token JWT en cada ingreso a las otras rutas
 const verifyToken = (req, res, next) => {
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1];
 
   if (!token) {
+    console.log('No token provided');
     return res.status(403).json({ message: 'No token provided' });
   }
 
   jwt.verify(token, SECRET_KEY, (err, decoded) => {
     if (err) {
+      console.log('Unauthorized:', err.message);
       return res.status(401).json({ message: 'Unauthorized' });
     }
     req.user = decoded;
