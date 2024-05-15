@@ -1,9 +1,9 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const app = express();
+const PORT = 3030;
 
 // Variable de entorno
-const PORT = process.env.PORT || 3030;
 const SECRET_KEY = process.env.SECRET_KEY || 'Minions';
 
 app.use(express.json());
